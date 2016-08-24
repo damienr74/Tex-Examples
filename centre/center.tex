@@ -1,0 +1,35 @@
+\documentclass{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                           %%
+%%     The \newenvironment command can be used to define new environments    %%
+%%     such as the 'centre' environment. The first pair of braces defines    %%
+%%     what should happen in the environment, and the second defines what    %%
+%%     should happpen after.                                                 %%
+%%                                                                           %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newenvironment{centre}
+{\begin{center}}
+{\end{center}}
+
+\newenvironment{my-it}{\it }{}
+
+\begin{document}
+
+\begin{my-it}
+	This should be italic
+\end{my-it}
+%
+%
+\begin{center}
+	Here is some {\it center} text
+\end{center}
+%
+%
+\begin{centre}
+	Here is some {\it centre} text
+\end{centre}
+This should be normal
+
+\end{document}
