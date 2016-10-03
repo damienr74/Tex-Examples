@@ -1,0 +1,176 @@
+\input eplain
+\beginpackages
+\usepackage{color}
+\endpackages
+
+\enablehyperlinks
+\definecolor{titles}{rgb}{0, .07, .23}
+\definecolor{text}{rgb}{0.17, 0.17, 0.17}
+%\definecolor{box}{rgb}{0.97, 0.77, 0.67}
+%\definecolor{box}{rgb}{0.93, 0.76, 0.50}
+\definecolor{box}{rgb}{0.93, 0.94, 0.98}
+\def\title#1{\vskip -9mm\centerline{\color{titles}\titlefont #1}\vskip 2mm}
+\def\subtitle#1{\hskip -7mm{\color{titles}\subtitlefont #1}\vskip 1mm \rule
+\vskip 1mm}
+\def\table#1#2 {\vbox{\halign{#1#2\crcr}}}
+\def\rule{\hrule height 0.3mm \vskip 2mm}
+\def\endsection{\vskip 5.2mm}
+\def\\{\cr\noalign{\vskip 2.6mm}}
+\def\phone{\pdfximage width 3mm height 3mm {phone.pdf}
+\pdfrefximage\pdflastximage}
+\def\home{\pdfximage width 3mm height 3mm {home.pdf}
+\pdfrefximage\pdflastximage}
+\def\mail{\pdfximage width 3mm height 2mm {mail.pdf}
+\pdfrefximage\pdflastximage}
+
+\font\titlefont=cmssbx26 at 26 pt
+\font\subtitlefont=cmssbx16 at 16 pt
+\font\rm=cmss12 at 10 pt
+\font\bf=cmssbx12 at 10 pt
+\topmargin=1 cm
+\bottommargin=1 cm
+\leftmargin=1 cm
+\rightmargin=1 cm
+\hsize 19.5cm
+\gutter=4mm
+\nopagenumbers
+
+\raggedright
+
+\rm
+\color{text}
+\title{Damien Robichaud}
+\vskip 2mm
+\centerline{{\bf Objective ---} Looking for a challenging and engaging
+	internship with an industry leader.}
+
+\doublecolumns
+
+\subtitle{Co-op Status}
+\table{#\quad\hfil\cr}{
+	Will have completed four of nine study terms in April 2017.\\
+	Available for second Co-op term in May 2017.
+}
+\endsection
+
+\subtitle{Education}
+\table{#\quad\hfil&#\quad\hfil\cr}{
+\bf 2015 --- Present &\bf Bachelor of Computer Science\cr
+	&Computer Science\cr
+	&University of Dalhousie
+}
+\endsection
+
+\subtitle{Technical Skills}
+\table{#\enskip\hfil&#\quad\hfil\cr}{
+	Git	&Actively version control projects at work, school, and on\cr
+		&my free time.\\
+%
+	C	&Used to make various projects, such as real time audio\cr
+		&playback a simple kernel and freestanding projects.\cr
+		&Good understanding of how to work with pthreads and \cr
+		&basic understanding of how to use C11 threads.\\
+%
+	ASM	&Comfortable writing low level code such as x86(\_64)\cr
+		&assembly programming.\\
+%
+	Gdb	&Experienced and comfortable with the Gnu debugger for C\cr
+		&and assembler.\\
+%
+	Java	&Used for various school assignments and during my work\cr
+		&term at Lockheed Martin.\\
+%
+	\TeX	&Used to make all academic writing assignments.\\
+%
+	Ruby	&Used to make small web server applications with\cr
+		&Postgresql.\\
+%
+	Go	&Used for lightweight text parsing applications, and \cr
+		&web servers.\\
+%
+	Unix	&I use Gentoo Linux as my main Operating System with\cr
+		&and without Xorg. Run and maintain a FreeBSD\cr
+		&installation. Some experience with Plan 9\\
+%
+	Bash	&Efficient and knowledgeable with shell commands and\cr
+		&Unix-like terminals.\\
+%
+	SVN	&Basic understanding and knowledge of the SVN version\cr
+		&control system.\\
+%
+	Make    &Good understanding of how to write makefiles for big\cr
+		&projects.\\
+}
+\endsection
+
+\subtitle{Non-Technical Skills}
+\table{#\quad\hfil\cr}{
+	Fluent in both French and English, written \& oral.\\
+	Very good self-learning skills acquired through working on my own\cr
+	projects.\\
+	Comfortable with both Agile and Test Driven Development.\\
+	Very creative in a problem solving environment.
+}
+
+\columnfill
+\centerline{\colorbox{box}{\vbox{
+	\vskip 2.7mm
+	\hbox{\item{\home} 1056 Lucknow Street, Halifax, NS B3H 2T5\enskip}
+	\hbox{\item{\phone} +1 (506) 871--7639}
+	\hbox{\item{\mail} \href{mailto:damien.r@dal.ca}{damien.r@dal.ca}}
+	\vskip 2.7mm
+	%\hbox{\item{} \href{http://github.com/damienr74}{github.com/damienr74}}
+}}}
+\vskip 4.51mm
+
+\subtitle{Work Experience}
+\table{#\quad\hfil\cr}{
+	\bf Lockheed Martin \hfill May 2016 --- August 2016\cr
+	Contributed to a JavaFX Internal Research and Development\cr
+	project, helping to design custom controls as well as full\cr
+	implementation of many panels. This has taught me to use\cr
+	software development tools such as TestFX and Gradle. Code\cr
+	review and the tooling used for this job helped me improve my\cr
+	programming skills, while giving me a look into development in an\cr
+	enterprise.\\
+}
+\endsection
+
+\subtitle{Programming Experience}
+\table{#\quad\hfil\cr}{
+	\bf Personal Project \hfill September 2016 --- Present\cr
+	Working on implementing a simple freestanding C Kernel for a\cr
+	real-time operating system on the x86 and ARM architectures.\cr
+	Current implementation handles simple scheduling, and very\cr
+	limited threading support.\\
+%
+	\bf Personal Project \hfill September 2015 --- October 2015\cr
+	Designed and programmed a multi-purpose WebRTC chat\cr
+	application capable of recording audio and video, as well as doing\cr
+	some simple real-time effect rendering.\\
+%
+	\bf Personal Project \hfill June 2015 --- August 2015\cr
+	Wrote a simple Unix shell using Golang, learning how to make\cr
+	system calls, how to handle child processes with the standard\cr
+	Golang library, and how to implement many Unix commands.\\
+%
+	\bf Personal Project \hfill January 2015 --- March 2015\cr
+	Designed and implemented a multi-threaded low-latency playback\cr
+	loop for sound cards with separate input and output plugs using\cr
+	the Advanced Linux Sound Architecture API in C, efficient enough\cr
+	to run on low end hardware such as the Raspberry Pi. This\cr
+	program was capable of doing simple Fourier transforms on the\cr
+	sound data to generate sound effects for guitar sound input.\\
+}
+\endsection
+
+\subtitle{Areas of Interest}
+\table{#\quad\hfil\crcr}{
+	Low level/systems programming.\\
+	Compilers and programming languages.\\
+	Real time programming and tooling.\\
+	Natural language processing \& machine learning.\\
+	Security and cryptography.\\
+}
+
+\bye
